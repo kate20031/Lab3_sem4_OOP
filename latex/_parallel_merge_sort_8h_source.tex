@@ -1,0 +1,25 @@
+\doxysection{Parallel\+Merge\+Sort.\+h}
+\hypertarget{_parallel_merge_sort_8h_source}{}\label{_parallel_merge_sort_8h_source}\index{src/sort/ParallelMergeSort.h@{src/sort/ParallelMergeSort.h}}
+\mbox{\hyperlink{_parallel_merge_sort_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_sorter_8h}{ISorter.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_parallel_merge_sort_ab407062438f92550e8cb316a8270777c}{ParallelMergeSort}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_sorter}{ISorter}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_parallel_merge_sort_ab407062438f92550e8cb316a8270777c}{ParallelMergeSort}}(\textcolor{keywordtype}{size\_t}\ maxDepth\ =\ 2)\ :\ maxDepth(maxDepth)\ \{\}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_parallel_merge_sort_aa96f18102b4625e19bb255fc764e7b66}{sort}}(std::vector<int>\&\ data)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ mergeSort(data,\ 0,\ data.size()\ -\/\ 1,\ 0);}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ maxDepth;\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ data,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ right,\ \textcolor{keywordtype}{size\_t}\ depth);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ data,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ right);}
+\DoxyCodeLine{00054\ \};}
+
+\end{DoxyCode}

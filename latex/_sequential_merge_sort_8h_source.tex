@@ -1,0 +1,18 @@
+\doxysection{Sequential\+Merge\+Sort.\+h}
+\hypertarget{_sequential_merge_sort_8h_source}{}\label{_sequential_merge_sort_8h_source}\index{src/sort/SequentialMergeSort.h@{src/sort/SequentialMergeSort.h}}
+\mbox{\hyperlink{_sequential_merge_sort_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_sorter_8h}{ISorter.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sequential_merge_sort}{SequentialMergeSort}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_sorter}{ISorter}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sequential_merge_sort_aca921416bec4f55a31e2ed935a8e4416}{sort}}(std::vector<int>\&\ data)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ data,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ right);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ data,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ right);}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

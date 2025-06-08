@@ -1,0 +1,13 @@
+# ninja log v6
+34	6091	7711134887683164	CMakeFiles/untitled5.dir/main.cpp.obj	c4cf29eab646cd69
+21	1467	7711136241512722	build.ninja	7da04765d9b03822
+20	2208	7711136243926282	CMakeFiles/untitled5.dir/src/sort/SequentialMergeSort.cpp.obj	d0520279a1f3aa08
+43	3570	7711136244155662	CMakeFiles/untitled5.dir/src/sort/ParallelMergeSort.cpp.obj	670be62daac80adf
+3571	4484	7711136279431338	untitled5.exe	1b78dc715657b8b2
+94	3428	7711140952784110	CMakeFiles/untitled5.dir/src/sort/ParallelMergeSort.cpp.obj	670be62daac80adf
+43	5867	7711140952275458	CMakeFiles/untitled5.dir/main.cpp.obj	c4cf29eab646cd69
+5867	6673	7711141010509755	untitled5.exe	1b78dc715657b8b2
+146	2874	7711162570857518	CMakeFiles/untitled5.dir/src/sort/SequentialMergeSort.cpp.obj	d0520279a1f3aa08
+171	5278	7711162571116823	CMakeFiles/untitled5.dir/src/sort/ParallelMergeSort.cpp.obj	670be62daac80adf
+97	7860	7711162570388763	CMakeFiles/untitled5.dir/main.cpp.obj	c4cf29eab646cd69
+7860	8934	7711162648011230	untitled5.exe	1b78dc715657b8b2

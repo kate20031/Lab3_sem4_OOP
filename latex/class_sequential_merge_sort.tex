@@ -1,0 +1,69 @@
+\doxysection{Sequential\+Merge\+Sort Class Reference}
+\hypertarget{class_sequential_merge_sort}{}\label{class_sequential_merge_sort}\index{SequentialMergeSort@{SequentialMergeSort}}
+
+
+Клас, що реалізує послідовний алгоритм сортування злиттям.  
+
+
+
+
+{\ttfamily \#include $<$Sequential\+Merge\+Sort.\+h$>$}
+
+Inheritance diagram for Sequential\+Merge\+Sort\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sequential_merge_sort}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sequential_merge_sort_aca921416bec4f55a31e2ed935a8e4416}{sort}} (std\+::vector$<$ int $>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Запуск сортування. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_sorter}{ISorter}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_sorter_ad891de8cfe1caa63f3388f5e6440a46e}{\texorpdfstring{$\sim$}{\string~}\+ISorter}} ()=default
+\begin{DoxyCompactList}\small\item\em Віртуальний деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас, що реалізує послідовний алгоритм сортування злиттям. 
+
+Наслідує інтерфейс \doxylink{class_i_sorter}{ISorter}. Виконує класичне сортування злиттям без паралелізації. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sequential_merge_sort_aca921416bec4f55a31e2ed935a8e4416}\index{SequentialMergeSort@{SequentialMergeSort}!sort@{sort}}
+\index{sort@{sort}!SequentialMergeSort@{SequentialMergeSort}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_sequential_merge_sort_aca921416bec4f55a31e2ed935a8e4416} 
+void Sequential\+Merge\+Sort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Запуск сортування. 
+
+Сортує вхідний масив за допомогою алгоритму Merge Sort.
+
+Сортує вектор цілих чисел за допомогою послідовного алгоритму злиття. 
+\begin{DoxyParams}{Parameters}
+{\em data} & Вектор цілих чисел для сортування.\\
+\hline
+\end{DoxyParams}
+Це послідовна (непаралельна) реалізація алгоритму.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Масив для сортування. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_sorter_a1af3b0d500879857367d86f7febb8ef2}{ISorter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/sort/\mbox{\hyperlink{_sequential_merge_sort_8h}{Sequential\+Merge\+Sort.\+h}}\item 
+src/sort/\mbox{\hyperlink{_sequential_merge_sort_8cpp}{Sequential\+Merge\+Sort.\+cpp}}\end{DoxyCompactItemize}

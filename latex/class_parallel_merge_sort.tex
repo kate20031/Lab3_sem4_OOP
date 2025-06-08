@@ -1,0 +1,80 @@
+\doxysection{Parallel\+Merge\+Sort Class Reference}
+\hypertarget{class_parallel_merge_sort}{}\label{class_parallel_merge_sort}\index{ParallelMergeSort@{ParallelMergeSort}}
+
+
+Клас, що реалізує паралельний алгоритм сортування злиттям.  
+
+
+
+
+{\ttfamily \#include $<$Parallel\+Merge\+Sort.\+h$>$}
+
+Inheritance diagram for Parallel\+Merge\+Sort\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_parallel_merge_sort}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parallel_merge_sort_ab407062438f92550e8cb316a8270777c}{Parallel\+Merge\+Sort}} (size\+\_\+t max\+Depth=2)
+\begin{DoxyCompactList}\small\item\em Конструктор з параметром максимального рівня паралелізму. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parallel_merge_sort_aa96f18102b4625e19bb255fc764e7b66}{sort}} (std\+::vector$<$ int $>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Запуск сортування. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_sorter}{ISorter}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_sorter_ad891de8cfe1caa63f3388f5e6440a46e}{\texorpdfstring{$\sim$}{\string~}\+ISorter}} ()=default
+\begin{DoxyCompactList}\small\item\em Віртуальний деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас, що реалізує паралельний алгоритм сортування злиттям. 
+
+Виконує сортування з використанням мультипоточності, розбиваючи задачу на підзадачі, які виконуються паралельно до досягнення максимальної глибини розбиття. Наслідує інтерфейс \doxylink{class_i_sorter}{ISorter}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_parallel_merge_sort_ab407062438f92550e8cb316a8270777c}\index{ParallelMergeSort@{ParallelMergeSort}!ParallelMergeSort@{ParallelMergeSort}}
+\index{ParallelMergeSort@{ParallelMergeSort}!ParallelMergeSort@{ParallelMergeSort}}
+\doxysubsubsection{\texorpdfstring{ParallelMergeSort()}{ParallelMergeSort()}}
+{\footnotesize\ttfamily \label{class_parallel_merge_sort_ab407062438f92550e8cb316a8270777c} 
+Parallel\+Merge\+Sort\+::\+Parallel\+Merge\+Sort (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{max\+Depth}{ = {\ttfamily 2}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор з параметром максимального рівня паралелізму. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Depth} & Максимальна глибина рекурсії, на якій застосовується паралельність. Якщо глибина більша за це значення, сортування відбувається послідовно. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_parallel_merge_sort_aa96f18102b4625e19bb255fc764e7b66}\index{ParallelMergeSort@{ParallelMergeSort}!sort@{sort}}
+\index{sort@{sort}!ParallelMergeSort@{ParallelMergeSort}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_parallel_merge_sort_aa96f18102b4625e19bb255fc764e7b66} 
+void Parallel\+Merge\+Sort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Запуск сортування. 
+
+Виконує паралельний merge sort над вектором даних. 
+\begin{DoxyParams}{Parameters}
+{\em data} & Вектор цілих чисел, який потрібно відсортувати. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_sorter_a1af3b0d500879857367d86f7febb8ef2}{ISorter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/sort/\mbox{\hyperlink{_parallel_merge_sort_8h}{Parallel\+Merge\+Sort.\+h}}\item 
+src/sort/\mbox{\hyperlink{_parallel_merge_sort_8cpp}{Parallel\+Merge\+Sort.\+cpp}}\end{DoxyCompactItemize}
